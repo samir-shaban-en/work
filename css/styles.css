@@ -376,6 +376,7 @@ button {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 8px;
 }
 .text-overlay {
   font-weight: 400;
@@ -384,6 +385,26 @@ button {
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: #111;
+  margin-top: 14px;
+}
+.btn-overlay {
+  font-weight: 400;
+  font-size: 10px;
+  background-color: #fd9222;
+  line-height: 1.2;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 35px;
+}
+.btn-overlay-white {
+  font-weight: 400;
+  font-size: 10px;
+
+  line-height: 1.2;
+  color: #111;
+  padding: 6px 16px;
+  border-radius: 35px;
+  border: 1px solid #fd9222;
 }
 .thumb {
   position: relative;
