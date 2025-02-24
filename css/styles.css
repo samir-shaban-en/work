@@ -40,6 +40,7 @@ img {
 button {
   border: 0;
   cursor: pointer;
+  font-family: inherit;
 }
 .container {
   max-width: 1168px;
@@ -79,12 +80,6 @@ button {
   gap: 8px;
   align-items: center;
 }
-.header-social-list {
-  display: flex;
-
-  margin-left: 90px;
-  gap: 18px;
-}
 
 .logo-div {
   font-style: italic;
@@ -113,20 +108,34 @@ button {
 .nav-link:hover {
   color: #fd9222;
 }
+.header-social-list {
+  display: flex;
 
+  margin-left: 90px;
+  gap: 18px;
+}
 .header-social-icon {
   fill: transparent;
   stroke: #111;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-lin:hover .header-social-icon,
 .social-lin:focus .header-social-icon {
   stroke: #fd9222;
+  transform: rotate(15deg);
 }
 .social-lin {
   display: flex;
-  justify-items: center;
   align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.currents {
+  position: relative;
+  overflow: hidden;
 }
 .current {
   color: #fd9222;
@@ -142,6 +151,27 @@ button {
   width: 100%;
   border-radius: 2px;
 }
+
+.currents::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.5px;
+  height: 3px;
+  background-color: #fd9222;
+  width: 100%;
+
+  border-radius: 2px;
+
+  transform: scaleX(0);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: right;
+}
+.currents:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* Hero */
 .hero-section {
   background-color: #1e1823;
@@ -210,6 +240,12 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.hero-link-made:hover {
+  border: 1px solid #fd9222;
+  background-color: #fff;
+  color: #fd9222;
+}
 .btn-wrap {
   display: flex;
   align-items: center;
@@ -225,26 +261,14 @@ button {
   display: flex;
   align-items: center;
   gap: 14px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-link:hover,
-.hero-link:focus .hero-icon-container:hover .hero-link,
-.hero-icon-container:focus .hero-link {
+.hero-link:focus {
   color: #fd9222;
 }
 
-.hero-link-made:hover {
-  border: 1px solid #fd9222;
-  background-color: #fff;
-  color: #fd9222;
-}
-.hero-icon {
-  fill: #fd9222;
-  transform: rotate(-90deg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .hero-icon-container {
   background-color: #fff;
   display: flex;
@@ -256,15 +280,17 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-icon-container:hover,
-.hero-icon-container:focus,
+
 .hero-link:hover .hero-icon-container,
 .hero-link:focus .hero-icon-container {
   background-color: #fd9222;
-  fill: #fff;
 }
-.hero-icon-container:hover .hero-icon,
-.hero-icon-container:focus .hero-icon,
+
+.hero-icon {
+  fill: #fd9222;
+  transform: rotate(-90deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .hero-link:hover .hero-icon,
 .hero-link:focus .hero-icon {
   transform: rotate(0deg);
@@ -381,6 +407,12 @@ button {
 .thumb:hover .overlay {
   transform: translate(0);
   opacity: 1;
+}
+.overlay-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  row-gap: 12px;
 }
 .thumb:hover:nth-child(odd) .overlay {
   border: 1px solid #fd9222;
