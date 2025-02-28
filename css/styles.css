@@ -39,6 +39,7 @@ img {
 }
 button {
   border: 0;
+  padding: 0;
   cursor: pointer;
   font-family: inherit;
 }
@@ -178,7 +179,7 @@ button {
   margin-bottom: 72px;
   padding-top: 372px;
   padding-bottom: 46px;
-  min-width: 1200px;
+  max-width: 1200px;
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -214,7 +215,6 @@ button {
   padding-bottom: 14px;
   min-width: 144px;
   border-radius: 100px;
-  min-height: 45px;
   margin-right: 14px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -231,11 +231,9 @@ button {
 
   border-radius: 100px;
   border: 1px solid #fff;
-  min-width: 183px;
-  min-height: 45px;
+
   text-align: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
+
   padding: 13px 39px 13px 39px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
