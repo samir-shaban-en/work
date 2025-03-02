@@ -416,7 +416,7 @@ button {
 .list-subtitle:hover .scale {
   transform: scaleX(-1);
   opacity: 0;
-  background-color: #fff;
+
   border-color: #fff;
 }
 .list-subtitle:nth-child(even) > div {
