@@ -74,17 +74,17 @@
           </li>
         </ul>
 
-        <button class="menu-btn" type="button">
+        <button class="menu-btn" type="button" data-menu-open>
           <svg class="menu-icon" width="28" height="28">
             <use href="./svg/symbol-defs.svg#icon-menu-icon"></use>
           </svg>
         </button>
       </div>
     </header>
-    <!-- Menue -->
-    <div class="backdrop">
+    <!-- Menu-->
+    <div class="backdrop" data-menu>
       <div class="container menu">
-        <button type="button" class="menu-close-btn">
+        <button type="button" class="menu-close-btn" data-menu-close>
           <svg class="menu-close-icon" width="28" height="28">
             <use href="./svg/symbol-defs.svg#icon-x-close"></use>
           </svg>
@@ -137,7 +137,7 @@
     <!-------- Hero -------->
     <main>
       <section class="hero-section">
-        <div class="subcontainer">
+        <div class="hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
@@ -670,5 +670,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
