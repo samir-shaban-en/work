@@ -598,8 +598,7 @@ button {
 .section-taste {
   padding-top: 60px;
 }
-.title-container {
-}
+
 .taste-section-title {
   font-weight: 600;
   font-size: 20px;
@@ -642,6 +641,7 @@ button {
 }
 .taste-item {
   position: relative;
+  perspective: 1000px;
 }
 
 .taste-item:nth-child(even) > .card-front {
@@ -651,16 +651,21 @@ button {
 .taste-item:nth-child(3n + 3) > .card-front {
   background-color: #1e1823;
 }
+.card {
+  position: relative;
+}
 .card-front {
   position: relative;
   background-color: #fd9222;
   border-radius: 15px;
   padding: 32px 49px 28px 50px;
   width: 100%;
+  height: 100%;
 
-  z-index: 999;
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-arrow {
   position: absolute;
@@ -700,10 +705,11 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  transform: scaleX(0);
+  opacity: 0;
+  transform: rotateY(180deg);
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-overlay {
   display: inline-block;
@@ -753,13 +759,13 @@ button {
   cursor: pointer;
 }
 .taste-item:hover .card-front {
-  transform: scaleX(0);
-  opacity: 0;
+  transform: rotateY(180deg);
+  background-color: transparent;
+  border-color: transparent;
 }
 .taste-item:hover .card-back {
-  transform: scaleX(1);
+  box-shadow: 25px 25px 42px #8f8f8f;
   opacity: 1;
-  box-shadow: 1px 16px 40px -8px rgba(0, 0, 0, 0.75);
 }
 @media screen and (min-width: 768px) {
   .taste-section-title {
@@ -786,9 +792,11 @@ button {
   }
   .taste-item {
     width: calc((100% - 3 * 19px) / 4);
-    overflow: auto;
   }
   .card-front {
     padding: 32px 23px 28px 23px;
+  }
+  .card-back {
+    overflow-y: auto;
   }
 }
