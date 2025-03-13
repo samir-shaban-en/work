@@ -229,13 +229,24 @@
             <li class="taste-item">
               <div class="card">
                 <div class="card-front">
-                  <img
-                    class="image-taste"
-                    srcset="./img/chock236.png 236w, ./img/chock472.png 472w"
-                    sizes="(max-width:1167px) 236px,
-                      214px"
-                    src="./img/chock236.png"
-                    alt="A chocolate" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/chock236webp.webp 236w,
+                        ./img/chock472webp.webp 472w
+                      "
+                      sizes="(max-width:1167px) 236px,
+                        214px"
+                      type="image/webp" />
+                    <source
+                      srcset="./img/chock236.png 236w, ./img/chock472.png 472w"
+                      sizes="(max-width:1167px) 236px,
+                        214px" />
+                    <img
+                      class="image-taste"
+                      src="./img/chock236.png"
+                      alt="A chocolate" />
+                  </picture>
 
                   <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
                   <svg class="icon-arrow" width="24" height="24">
@@ -262,13 +273,22 @@
             <li class="taste-item">
               <div class="card">
                 <div class="card-front">
-                  <img
-                    class="image-taste"
-                    srcset="./img/milk236.png 236w, ./img/milk472.png 472w"
-                    sizes="(max-width:1167px) 236px,
-                      214px"
-                    src="./img/milk236.png"
-                    alt="A bottle of milk" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/milk236webp.webp 236w,
+                        ./img/milk472webp.webp 472w
+                      "
+                      sizes="(max-width: 1167px) 236px, 214px"
+                      type="image/webp" />
+                    <source
+                      srcset="./img/milk236.png 236w, ./img/milk472.png 472w"
+                      sizes="(max-width: 1167px) 236px, 214px" />
+                    <img
+                      class="image-taste"
+                      src="./img/milk236.png"
+                      alt="A bottle of milk" />
+                  </picture>
 
                   <h3 class="taste-subtitle">MILK</h3>
                   <svg class="icon-arrow" width="24" height="24">
@@ -297,13 +317,24 @@
             <li class="taste-item">
               <div class="card">
                 <div class="card-front">
-                  <img
-                    class="image-taste"
-                    srcset="./img/nut236.png 236w, ./img/nut472.png 472w"
-                    sizes="(max-width:1167px) 236px,
-                      214px"
-                    src="./img/nut236.png"
-                    alt="The nuts" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/nut236webp.webp 236w,
+                        ./img/nut472webp.webp 472w
+                      "
+                      sizes="(max-width:1167px) 236px,
+                        214px"
+                      type="image/webp" />
+                    <source
+                      srcset="./img/nut236.png 236w, ./img/nut472.png 472w"
+                      sizes="(max-width:1167px) 236px,
+                        214px" />
+                    <img
+                      class="image-taste"
+                      src="./img/nut236.png"
+                      alt="The nuts" />
+                  </picture>
                   <h3 class="taste-subtitle">NUTS</h3>
                   <svg class="icon-arrow" width="24" height="24">
                     <use href="./svg/symbol-defs.svg#icon-Group"></use>
@@ -331,13 +362,27 @@
             <li class="taste-item">
               <div class="card">
                 <div class="card-front">
-                  <img
-                    class="image-taste"
-                    srcset="./img/pieces236.png 236w, ./img/pieces472.png 472w"
-                    sizes="(max-width:1167px) 236px,
-                      214px"
-                    src="./img/pieces236.png"
-                    alt="The pieces of chocolate" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/pieces236webp.webp 236w,
+                        ./img/pieces472webp.webp 472w
+                      "
+                      sizes="(max-width:1167px) 236px,
+                        214px"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./img/pieces236.png 236w,
+                        ./img/pieces472.png 472w
+                      "
+                      sizes="(max-width:1167px) 236px,
+                        214px" />
+                    <img
+                      class="image-taste"
+                      src="./img/pieces236.png"
+                      alt="The pieces of chocolate" />
+                  </picture>
                   <h3 class="taste-subtitle">SEMI-SWEET CHOCOLATE</h3>
                   <svg class="icon-arrow" width="24" height="24">
                     <use href="./svg/symbol-defs.svg#icon-Group"></use>
@@ -525,7 +570,7 @@
                   ./img/white-classic.png    1x,
                   ./img/white-classic@2x.png 2x
                 "
-                src="./img/orange.png"
+                src="./img/white-classic.png"
                 alt="White classic chocolate"
                 width="230"
                 height="201" />
