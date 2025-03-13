@@ -163,8 +163,7 @@ button {
 .menu-close-icon {
   stroke: #fff;
 }
-.menu-nav {
-}
+
 .menu-nav-list {
   display: flex;
   flex-direction: column;
@@ -328,6 +327,15 @@ button {
   background-repeat: no-repeat;
   box-shadow: 25px 25px 42px #8f8f8f;
 }
+@supports (--css: variables) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      url(../img/hero-bg_mobwebp@1x.webp);
+  }
+}
 @media screen and (max-width: 767px) and (min-resolution: 2x) {
   .hero-section {
     background-image: linear-gradient(
@@ -336,6 +344,16 @@ button {
       ),
       url(../img/hero-bg_mob@2x.jpg);
     margin-bottom: 40px;
+  }
+}
+
+@supports (--css: variables) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      url(../img/hero-bg_mobwebp@2x.webp);
   }
 }
 .hero-container {
@@ -453,6 +471,16 @@ button {
     padding-bottom: 40px;
     margin-bottom: 80px;
   }
+
+  @supports (--css: variables) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(30, 24, 35, 0.4),
+          rgba(30, 24, 35, 0.4)
+        ),
+        url(../img/hero-bg_tabwebp@1x.webp);
+    }
+  }
   @media screen and (min-width: 768px) and (min-resolution: 2x) {
     .hero-section {
       background-image: linear-gradient(
@@ -460,6 +488,15 @@ button {
           rgba(30, 24, 35, 0.4)
         ),
         url(../img/hero-bg_tab@2x.jpg);
+    }
+  }
+  @supports (--css: variables) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(30, 24, 35, 0.4),
+          rgba(30, 24, 35, 0.4)
+        ),
+        url(../img/hero-bg_tabwebp@2x.webp);
     }
   }
   .hero-container {
@@ -495,6 +532,15 @@ button {
   }
 }
 
+@supports (--css: variables) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      url(../img/hero-bg_deskwebp@1x.webp);
+  }
+}
 @media screen and (min-width: 1168px) and (min-resolution: 2x) {
   .hero-section {
     background-image: linear-gradient(
@@ -502,6 +548,15 @@ button {
         rgba(30, 24, 35, 0.4)
       ),
       url(../img/hero-bg_desk@2x.jpg);
+  }
+}
+@supports (--css: variables) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      url(../img/hero-bg_deskwebp@2x.webp);
   }
 }
 /* section Benefiets */
