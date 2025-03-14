@@ -323,7 +323,10 @@ button {
       rgba(30, 24, 35, 0.4),
       rgba(30, 24, 35, 0.4)
     ),
-    url(../img/hero-bg_mob@1x.jpg);
+    image-set(
+      url("../img/hero-bg_mobwebp@1x.webp") type("image/webp") 1x,
+      url("../img/hero-bg_mob@1x.jpg") 1x
+    );
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 25px 25px 42px #8f8f8f;
@@ -335,7 +338,10 @@ button {
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)
       ),
-      url(../img/hero-bg_mob@2x.jpg);
+      image-set(
+        url("../img/hero-bg_mobwebp@2x.webp") type("image/webp") 2x,
+        url("../img/hero-bg_mob@2x.jpg") 2x
+      );
     margin-bottom: 40px;
   }
 }
@@ -449,7 +455,10 @@ button {
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)
       ),
-      url(../img/hero-bg_tab@1x.jpg);
+      image-set(
+        url("../img/hero-bg_tabwebp@1x.webp") type("image/webp") 1x,
+        url("../img/hero-bg_tab@1x.jpg") 1x
+      );
     max-width: 704px;
     padding-top: 671px;
     padding-bottom: 40px;
@@ -462,7 +471,10 @@ button {
           rgba(30, 24, 35, 0.4),
           rgba(30, 24, 35, 0.4)
         ),
-        url(../img/hero-bg_tab@2x.jpg);
+        image-set(
+          url("../img/hero-bg_tabwebp@2x.webp") type("image/webp") 2x,
+          url("../img/hero-bg_tab@2x.jpg") 2x
+        );
     }
   }
 
@@ -493,7 +505,11 @@ button {
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)
       ),
-      url(../img/hero-bg_desk@1x.jpg);
+      image-set(
+        url("../img/hero-bg_deskwebp@1x.webp") type("image/webp") 1x,
+        url("../img/hero-bg_desk@1x.jpg") 1x
+      );
+
     max-width: 1136px;
     padding-top: 381px;
   }
@@ -505,7 +521,10 @@ button {
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)
       ),
-      url(../img/hero-bg_desk@2x.jpg);
+      image-set(
+        url("../img/hero-bg_deskwebp@2x.webp") type("image/webp") 2x,
+        url("../img/hero-bg_desk@2x.jpg") 2x
+      );
   }
 }
 
