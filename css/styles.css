@@ -1254,7 +1254,7 @@ button {
 
 /* section Loved */
 .section-loved {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .loved-section-title {
   font-weight: 600;
@@ -1332,7 +1332,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-loved {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .loved-list {
     display: flex;
