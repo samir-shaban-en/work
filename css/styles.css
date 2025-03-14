@@ -1490,6 +1490,9 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .contacts-plus-social-wrap {
     gap: 40px;
@@ -1501,6 +1504,9 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    padding-top: 24px;
+    padding-bottom: 50px;
   }
   .nav-list {
     flex-direction: row;
