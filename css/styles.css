@@ -1,6 +1,9 @@
 .hidden {
   display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 .body {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -620,8 +623,8 @@ button {
 }
 /* section Taste */
 .section-taste {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .taste-section-title {
@@ -802,8 +805,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-taste {
-    padding-top: 80px;
-    padding-bottom: 68px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
   .taste-section-title {
     max-width: 411px;
@@ -825,8 +828,8 @@ button {
 }
 @media screen and (min-width: 1168px) {
   .section-taste {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
   .taste-list {
     gap: 19px;
@@ -841,7 +844,8 @@ button {
 /* section Made */
 
 .section-made {
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-made-title {
@@ -918,7 +922,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-made {
-    padding-bottom: 68px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .video-wrap {
     max-width: 614px;
@@ -944,7 +949,8 @@ button {
 
 @media screen and (min-width: 1168px) {
   .section-made {
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .made-wrap {
     flex-direction: row;
@@ -972,11 +978,12 @@ button {
 /* section Products */
 
 .section-products {
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .container.gradient {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background: linear-gradient(
     267deg,
     rgba(250, 250, 250, 1) 0%,
@@ -1226,7 +1233,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .section-products {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .products-list {
     flex-direction: row;
@@ -1242,6 +1250,10 @@ button {
   }
 }
 @media screen and (min-width: 1168px) {
+  .section-products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .products-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1254,6 +1266,7 @@ button {
 
 /* section Loved */
 .section-loved {
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 .loved-section-title {
@@ -1332,7 +1345,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-loved {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .loved-list {
     display: flex;
@@ -1352,6 +1366,10 @@ button {
   }
 }
 @media screen and (min-width: 1168px) {
+  .section-loved {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
   .loved-item {
     flex-basis: calc((100% - 2 * 16px) / 3);
   }
