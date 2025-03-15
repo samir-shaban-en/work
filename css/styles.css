@@ -1572,13 +1572,12 @@ button {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 311px;
+  width: 315px;
 
-  min-height: 622px;
   background-color: #fafafa;
   border-radius: 15px;
   padding: 32px 24px;
-
+  border: 2px solid #fd9222;
   transform: translate(-50%, -50%) scale(1.5);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1589,8 +1588,8 @@ button {
 }
 .modal-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   padding: 0;
   background-color: transparent;
   display: flex;
@@ -1617,10 +1616,17 @@ button {
   color: #111;
   margin-bottom: 32px;
 }
-
+@media screen and (max-width: 767px) {
+  .title-span-block {
+    display: block;
+  }
+}
 .modal-label {
   display: flex;
   flex-direction: column;
+  margin-bottom: 14px;
+}
+.modal-label.text {
   margin-bottom: 18px;
 }
 
@@ -1629,10 +1635,12 @@ button {
   font-size: 13px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
+
 .input-icon-wrap input {
   width: 100%;
+  height: 45px;
   padding-top: 15px;
 
   padding-bottom: 15px;
@@ -1642,6 +1650,10 @@ button {
   outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
 }
 .input-icon-wrap input:focus,
 .modal-label textarea:focus {
@@ -1656,14 +1668,20 @@ button {
   padding: 14px 18px;
   border-radius: 13px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
 }
 .input-icon-wrap {
   position: relative;
 }
 .modal-icon {
   position: absolute;
+  width: 18px;
+  height: 18px;
   top: 50%;
-  left: 24px;
+  left: 18px;
   transform: translateY(-50%);
   stroke: #404040;
   fill: transparent;
@@ -1688,7 +1706,12 @@ button {
   color: rgba(64, 64, 64, 0.6);
 }
 .policy-label-wrap {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .policy-label {
+    display: flex;
+  }
 }
 .policy-posicion a {
   text-decoration: underline;
@@ -1698,6 +1721,8 @@ button {
 }
 
 .checkbox-item {
+  flex-shrink: 0;
+
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
   width: 20px;
@@ -1720,9 +1745,8 @@ button {
 }
 
 .modal-btn-send {
-  min-width: 117px;
   background-color: #fd9222;
-  display: block;
+
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -1736,50 +1760,52 @@ button {
   background-color: #fcf1e0;
   color: #fd9222;
 }
-@media screen and (max-width: 767px) {
-  .text-line {
-    display: block;
-  }
-  .modal-btn {
-    top: 14px;
-    right: 14px;
-  }
-  .policy-label {
-    display: flex;
-    align-items: flex-start;
-  }
-  .checkbox-item {
-    flex-shrink: 0;
-  }
-  .modal-icon {
-    width: 17px;
-    aspect-ratio: 1;
-  }
-  .modal-label label {
-    margin-bottom: 4px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .modal-overlay {
     width: 517px;
-    min-height: 794px;
+
     padding: 40px;
     border: 2px solid #fd9222;
+  }
+  .modal-btn {
+    top: 24px;
+    right: 24px;
   }
   .modal-text {
     font-size: 24px;
     max-width: 296px;
     line-height: 1.17;
+
+    margin-bottom: 40px;
+  }
+  .modal-label {
+    margin-bottom: 18px;
+  }
+  .modal-label label {
+    margin-bottom: 8px;
   }
   .input-icon-wrap input {
     padding: 22px 62px;
+    height: 68px;
+
+    font-size: 18px;
+  }
+  .modal-icon {
+    width: 24px;
+    height: 24px;
+
+    left: 24px;
   }
   .modal-label textarea {
     height: 137px;
+    font-size: 18px;
   }
   .modal-textarea::placeholder {
     font-size: 18px;
+  }
+  .policy-label-wrap {
+    margin-bottom: 40px;
   }
   .policy-label {
     font-size: 14px;
